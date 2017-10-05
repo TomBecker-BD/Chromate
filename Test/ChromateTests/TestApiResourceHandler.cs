@@ -1,14 +1,11 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Rhino.Mocks;
-using CefSharp;
-using System.Net.Http;
+﻿using System.IO;
 using System.Net;
-using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+using CefSharp;
+using Chromate;
+using NUnit.Framework;
+using Rhino.Mocks;
 
 namespace BD.Resolve.Chromate.Tests
 {

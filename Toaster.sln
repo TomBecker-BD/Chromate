@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToasterWebAPITest", "Test\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingUtilities", "Test\TestingUtilities\TestingUtilities.csproj", "{CFB53C2A-D7E1-4AF4-B8EF-0BB08E472F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromateTests", "Test\ChromateTests\ChromateTests.csproj", "{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,14 @@ Global
 		{CFB53C2A-D7E1-4AF4-B8EF-0BB08E472F09}.Release|Any CPU.ActiveCfg = Release|x64
 		{CFB53C2A-D7E1-4AF4-B8EF-0BB08E472F09}.Release|x64.ActiveCfg = Release|x64
 		{CFB53C2A-D7E1-4AF4-B8EF-0BB08E472F09}.Release|x64.Build.0 = Release|x64
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Debug|x64.ActiveCfg = Debug|x64
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Debug|x64.Build.0 = Debug|x64
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Release|x64.ActiveCfg = Release|x64
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,5 +114,6 @@ Global
 		{8EDF4429-251A-416D-BB68-93F227191BCF} = {F8DEB1A5-BF47-44A1-97C9-B9D0BDDA7047}
 		{AF0F97C7-55AC-4A04-A2D3-1AAE32F7C7D1} = {F8DEB1A5-BF47-44A1-97C9-B9D0BDDA7047}
 		{CFB53C2A-D7E1-4AF4-B8EF-0BB08E472F09} = {F8DEB1A5-BF47-44A1-97C9-B9D0BDDA7047}
+		{ABDE0C4E-2EFB-4656-A6CD-C01DA7AEF1F6} = {F8DEB1A5-BF47-44A1-97C9-B9D0BDDA7047}
 	EndGlobalSection
 EndGlobal
