@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="NpmRunBuild"
+      DependsOnTargets="EnsureNodeModules"
+      BeforeTargets="Build"
+      Condition=" Exists('$(NpmFile)') " >
+    <PropertyGroup>
+      <NpmWorkingDirectory>$([System.IO.Path]::GetDirectoryName('$(NpmFile)'))</NpmWorkingDirectory>
+      <NpmRunBuildCmd>"$(NodePath)\npm" --loglevel warn run build-$(Configuration)</NpmRunBuildCmd>
+    </PropertyGroup>
+    <Message Text="Npm Working Directory: '$(NpmWorkingDirectory)'" />
+    <Exec Command="$(NpmRunBuildCmd)"
+        WorkingDirectory="$(NpmWorkingDirectory)"
+        CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)"/>
+  </Target>
+  <Target Name="NpmRunClean"
+      DependsOnTargets="EnsureNodeModules"
+      AfterTargets="Clean"
+      Condition=" Exists('$(NpmFile)') " >
+    <PropertyGroup>
+      <NpmWorkingDirectory>$([System.IO.Path]::GetDirectoryName('$(NpmFile)'))</NpmWorkingDirectory>
+      <NpmRunCleanCmd>"$(NodePath)\npm" --loglevel warn run clean-$(Configuration)</NpmRunCleanCmd>
+    </PropertyGroup>
+    <Message Text="Npm Working Directory: '$(NpmWorkingDirectory)'" />
+    <Exec Command="$(NpmRunCleanCmd)"
+        WorkingDirectory="$(NpmWorkingDirectory)"
+        CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)"/>
+  </Target>
+  <!-- vim: set ft=xml sw=4 :-->
+</Project>

@@ -1,0 +1,20 @@
+<div class="mat-app-background">
+    <md-card>
+        <md-card-header>
+            <md-form-field>
+                <input mdInput type="text" name="content" id="content" placeholder="Content" [(ngModel)]="status.content" (change)="contentChanged()">
+            </md-form-field>
+        </md-card-header>
+        <md-card-content>
+            <p><label class="mat-caption">Color: </label><span class="mat-caption"> {{status.color}}</span></p>
+            <div class="toast" [ngStyle]="{'background-color': status.color}"></div>
+        </md-card-content>
+        <md-card-actions>
+            <p><label for="setting" class="mat-caption">Setting: </label>
+                <md-slider name="setting" id="setting" min="0" max="20" [(ngModel)]="status.setting" (change)="settingChanged()"></md-slider><span class="mat-caption"> {{status.setting}}</span></p>
+            <p>
+                <md-checkbox name="toasting" id="toasting" [(ngModel)]="status.toasting" (change)="toastingChanged()">Toasting</md-checkbox>
+            </p>
+        </md-card-actions>
+    </md-card>
+</div>

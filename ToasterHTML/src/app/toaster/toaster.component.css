@@ -1,0 +1,11 @@
+md-card {
+    width: 300px;
+    margin: 50px;
+}
+.toast {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 50px 50px 5px 5px;
+    border-color: black;
+}
