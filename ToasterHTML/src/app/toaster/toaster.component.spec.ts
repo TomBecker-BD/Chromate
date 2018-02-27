@@ -4,12 +4,12 @@ import { Observable } from 'rxjs/Rx';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MdCardModule,
-  MdCheckboxModule,
-  MdFormFieldModule,
-  MdInputModule,
-  MdSliderModule,
-  MdToolbarModule
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSliderModule,
+  MatToolbarModule
 } from '@angular/material';
 
 import { ToasterComponent } from './toaster.component';
@@ -33,12 +33,12 @@ describe('ToasterComponent', () => {
       imports: [
         FormsModule,
         NoopAnimationsModule,
-        MdCardModule,
-        MdCheckboxModule,
-        MdFormFieldModule,
-        MdInputModule,
-        MdSliderModule,
-        MdToolbarModule
+        MatCardModule,
+        MatCheckboxModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSliderModule,
+        MatToolbarModule
       ],
     })
     .compileComponents();

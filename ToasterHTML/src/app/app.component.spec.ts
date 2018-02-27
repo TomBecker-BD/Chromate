@@ -5,12 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MdCardModule,
-  MdCheckboxModule,
-  MdFormFieldModule,
-  MdInputModule,
-  MdSliderModule,
-  MdToolbarModule
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSliderModule,
+  MatToolbarModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -41,12 +41,12 @@ describe('AppComponent', () => {
       imports: [
         FormsModule,
         NoopAnimationsModule,
-        MdCardModule,
-        MdCheckboxModule,
-        MdFormFieldModule,
-        MdInputModule,
-        MdSliderModule,
-        MdToolbarModule
+        MatCardModule,
+        MatCheckboxModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSliderModule,
+        MatToolbarModule
       ],
     }).compileComponents();
   }));
@@ -67,6 +67,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('md-toolbar span').textContent).toContain('Welcome to Toaster!');
+    expect(compiled.querySelector('mat-toolbar span').textContent).toContain('Welcome to Toaster!');
   }));
 });

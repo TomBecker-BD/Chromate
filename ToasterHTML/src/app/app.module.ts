@@ -5,12 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MdCardModule,
-  MdCheckboxModule,
-  MdFormFieldModule,
-  MdInputModule,
-  MdSliderModule,
-  MdToolbarModule
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSliderModule,
+  MatToolbarModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -27,12 +27,12 @@ import { ToasterComponent } from './toaster/toaster.component';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    MdCardModule,
-    MdCheckboxModule,
-    MdFormFieldModule,
-    MdInputModule,
-    MdSliderModule,
-    MdToolbarModule
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSliderModule,
+    MatToolbarModule
   ],
   providers: [ToasterService],
   bootstrap: [AppComponent]

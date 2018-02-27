@@ -1,20 +1,20 @@
 <div class="mat-app-background">
-    <md-card>
-        <md-card-header>
-            <md-form-field>
-                <input mdInput type="text" name="content" id="content" placeholder="Content" [(ngModel)]="status.content" (change)="contentChanged()">
-            </md-form-field>
-        </md-card-header>
-        <md-card-content>
+    <mat-card>
+        <mat-card-header>
+            <mat-form-field>
+                <input matInput type="text" name="content" id="content" placeholder="Content" [(ngModel)]="status.content" (change)="contentChanged()">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-content>
             <p><label class="mat-caption">Color: </label><span class="mat-caption"> {{status.color}}</span></p>
             <div class="toast" [ngStyle]="{'background-color': status.color}"></div>
-        </md-card-content>
-        <md-card-actions>
+        </mat-card-content>
+        <mat-card-actions>
             <p><label for="setting" class="mat-caption">Setting: </label>
-                <md-slider name="setting" id="setting" min="0" max="20" [(ngModel)]="status.setting" (change)="settingChanged()"></md-slider><span class="mat-caption"> {{status.setting}}</span></p>
+                <mat-slider name="setting" id="setting" min="0" max="20" [(ngModel)]="status.setting" (change)="settingChanged()"></mat-slider><span class="mat-caption"> {{status.setting}}</span></p>
             <p>
-                <md-checkbox name="toasting" id="toasting" [(ngModel)]="status.toasting" (change)="toastingChanged()">Toasting</md-checkbox>
+                <mat-checkbox name="toasting" id="toasting" [(ngModel)]="status.toasting" (change)="toastingChanged()">Toasting</mat-checkbox>
             </p>
-        </md-card-actions>
-    </md-card>
+        </mat-card-actions>
+    </mat-card>
 </div>
